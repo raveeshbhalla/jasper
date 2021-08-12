@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Github.dev
-permalink: reading
+permalink: github-dot-dev
 ---
 https://twitter.com/github/status/1425505817827151872?s=19
 
