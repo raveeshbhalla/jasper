@@ -14,7 +14,7 @@ jobs:
   echo_details:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{github.event.commits}}
+      - run: echo ${{github.event.head_commit.message}}
 
   build_and_deploy:
     runs-on: ubuntu-latest
