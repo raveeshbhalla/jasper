@@ -21,9 +21,7 @@ jobs:
           GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
           GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
         uses: raveeshbhalla/jekyll-deploy-gh-pages@master
-        
-        echo ${{github.event}}
-        
+        run: echo ${{github.event}}
       - uses: ethomson/send-tweet-action@v1
         with:
           status: ${{ github.event.commits[0].message }}
