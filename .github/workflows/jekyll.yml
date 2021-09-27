@@ -12,8 +12,9 @@ on:
 
 jobs: 
   echo_details:
-    run: echo ${{github.event}}
-    
+    steps:
+      run: echo ${{github.event}}
+
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
