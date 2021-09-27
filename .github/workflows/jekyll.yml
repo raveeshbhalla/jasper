@@ -12,6 +12,7 @@ on:
 
 jobs: 
   echo_details:
+    runs-on: ubuntu-latest
     steps:
       - run: echo ${{github.event}}
 
